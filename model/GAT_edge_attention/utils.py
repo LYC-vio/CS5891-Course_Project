@@ -37,7 +37,7 @@ def load_data(path="./data/cora/", dataset="cora"):
     idx_val = range(200, 500)
     idx_test = range(500, 1500)
 
-    adj = torch.FloatTensor(np.array(adj.todense()))
+    adj = torch.FloatTensor(np.array([adj.todense(), adj.todense(), adj.todense()]))
     features = torch.FloatTensor(np.array(features.todense()))
     labels = torch.LongTensor(np.where(labels)[1])
 
@@ -46,11 +46,6 @@ def load_data(path="./data/cora/", dataset="cora"):
     idx_test = torch.LongTensor(idx_test)
 
     return adj, features, labels, idx_train, idx_val, idx_test
-
-
-def load_data_weight_loss():
-    # TODO reimplement data loader of weight loss
-    pass
 
 
 def normalize_adj(mx):

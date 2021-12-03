@@ -12,8 +12,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
 
-from baselines.GAT_vanilla.utils import load_data, accuracy, load_data_weight_loss
-from baselines.GAT_vanilla.models import GAT, SpGAT
+from model.GAT_edge_attention.utils import load_data, accuracy
+from model.GAT_edge_attention.models import GAT, SpGAT
 
 # Training settings
 parser = argparse.ArgumentParser()
@@ -40,8 +40,17 @@ if args.cuda:
     torch.cuda.manual_seed(args.seed)
 
 # Load data
-# adj, features, labels, idx_train, idx_val, idx_test = load_data()
-adj, features, labels, idx_train, idx_val, idx_test = load_data_weight_loss()
+# print(os.listdir())
+adj, features, labels, idx_train, idx_val, idx_test = load_data()
+# print(adj.size())
+#
+# print(adj[0])
+# print(np.nonzero(adj[0]))
+# for i in range(2):
+#     adj = np.stack(adj)
+adj = adj.transpose(2, 0)
+print(adj.size())
+# exit(-1)
 
 # Model and optimizer
 if args.sparse:
