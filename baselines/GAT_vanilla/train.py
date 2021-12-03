@@ -8,13 +8,12 @@ import random
 import argparse
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
 
-from baselines.utils import load_data, accuracy
-from baselines.models import GAT, SpGAT
+from baselines.GAT_vanilla.utils import load_data, accuracy
+from baselines.GAT_vanilla.models import GAT, SpGAT
 
 # Training settings
 parser = argparse.ArgumentParser()

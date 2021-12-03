@@ -1,7 +1,6 @@
 from graphviz import Digraph
 
 import torch
-import baselines.models
 
 
 def make_dot(var, params):

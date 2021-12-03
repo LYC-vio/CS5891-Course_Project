@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from baselines.layers import GraphAttentionLayer, SpGraphAttentionLayer
+from baselines.GAT_vanilla.layers import GraphAttentionLayer, SpGraphAttentionLayer
 
 
 class GAT(nn.Module):
