@@ -1,3 +1,9 @@
+# visualization data distribution
+- cal_record_analysis.py                         plot the unfiltered/filtered users' calorie data distribution (figure 2 in paper)
+- order_record_analysis.py                       plot the users' oder and spending distribution (figure 3 in paper)
+- spreading_pattern_analysis.py                  print the users' follow, comment, mention spreadings (Table5-7 in paper)
+- weight_change_record_frequency_analysis.py     plot the unfiltered/filtered users' weight change record data distribution (figure 1 and 6 in paper)
+
 # data pre-processing
 - bmi cutoff: remove users with bmi <= 18.5
 - discard users if target_weight >= weight
