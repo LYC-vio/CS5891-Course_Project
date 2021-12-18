@@ -185,7 +185,7 @@ def plot_filtered_cal_record_distribution(record_pkl_file,filtered_usr_file,weig
 
 if __name__ == '__main__':
 
-    #cal_record_analysis('../WeightLoss/can_record_consolidated.csv','../WeightLoss/')
+    cal_record_analysis('../WeightLoss/can_record_consolidated.csv','../WeightLoss/')
     plot_cal_record_distribution('../WeightLoss/cal_record.pkl')
     plot_filtered_cal_record_distribution('../WeightLoss/cal_record.pkl','../WeightLoss/user_features_combine.csv','../WeightLoss/label_slide.csv')
 
