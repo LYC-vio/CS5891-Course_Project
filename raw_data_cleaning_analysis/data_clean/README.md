@@ -22,14 +22,14 @@
 > final users：1355905
 # label assigning
 >
-> calculate by：$(weight - last\_record\_weight)\ /\   (weight - target\_weight) $
+> calculate by：(weight - last_record_weight) /   (weight - target_weight) 
 >
 > | range             | label | users | ratio |
 > | ----------------- | ---- | -------- | -------- |
-> | $(-\infty, 0.25]$ | 0    | 1024561  | 0.756    |
-> | $(0.25, 0.5]$     | 1    | 216167   | 0.159    |
-> | $(0.5, 0.75]$     | 2    | 77287    | 0.057    |
-> | $(0.75, +\infty)$ | 3    | 37890    | 0.028    |
+> | (-infty, 0.25] | 0    | 1024561  | 0.756    |
+> | (0.25, 0.5]     | 1    | 216167   | 0.159    |
+> | (0.5, 0.75]     | 2    | 77287    | 0.057    |
+> | (0.75, +infty) | 3    | 37890    | 0.028    |
 > | total             |      | 1355905  | 1        |
 >
 > 
