@@ -212,7 +212,7 @@ def plot_filtered_frequency_distribution(record_pkl_file,filtered_usr_file,weigh
 
 if __name__ == '__main__':
 
-    #weight_change_record_frequency_analysis('../WeightLoss/weight_record_consolidated(weight change history).csv','../WeightLoss/')
+    weight_change_record_frequency_analysis('../WeightLoss/weight_record_consolidated(weight change history).csv','../WeightLoss/')
     plot_frequency_distribution('../WeightLoss/weight_change_record_frequency.pkl')
     plot_filtered_frequency_distribution('../WeightLoss/weight_change_record_frequency.pkl','../WeightLoss/user_features_combine.csv','../WeightLoss/label_slide.csv')
 
